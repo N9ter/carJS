@@ -10,4 +10,8 @@ app.get('/',(req,res)=>{
     res.sendFile(__dirname + "/index.html");
 })
 
+app.get('/car/:id',(req,res)=>{
+    res.sendFile(__dirname + "public/singlecar.html");
+})
+
 app.listen(PORT,()=>{console.log(`Сервер запущен  на порту ${PORT}`)});

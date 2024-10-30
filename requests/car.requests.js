@@ -7,7 +7,7 @@ async function getAllCars() {
     const result = await response.json();
     return result;
 }
-async function getOneCars() {
+async function getOneCar() {
     const response = await fetch('api/car/' + id,{
         method:'GET'
     });
@@ -44,4 +44,4 @@ async function updateCar(id,name,description,price,img) {
     });
 }
 
-export {getAllCars,getOneCars,updateCar,deleteCar,addCar}
+export {getAllCars,getOneCar,updateCar,deleteCar,addCar}
